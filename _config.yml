@@ -1,0 +1,20 @@
+# Site settings
+title: Rackspace Private Cloud v9.0
+email: rcbops@rackspace.com
+description: >
+  This is the un-official landing page for Rackspace Private Cloud v9.0
+baseurl: ""
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+twitter_username: rackspace
+github_username:  rcbops
+
+# Build settings
+markdown: kramdown
+
+links:
+  - name: Documentation
+    href: http://docs.rackspace.com/rpc/api/v9/bk-rpc-installation/content/rpc-common-front.html
+  - name: Download
+    href: https://github.com/rcbops/ansible-lxc-rpc/releases/
+  - name: GitHub
+    href: https://github.com/rcbops/ansible-lxc-rpc
