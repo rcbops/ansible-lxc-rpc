@@ -1,17 +1,20 @@
 # Site settings
-title: Rackspace Private Cloud v9.0
-email: rcbops@rackspace.com
+title: Rackspace Private Cloud
+release: v9.0.0
+openstack_version: Icehouse
 description: >
-  This is the un-official landing page for Rackspace Private Cloud v9.0
-baseurl: ""
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+  The landing page for Rackspace Private Cloud
 twitter_username: rackspace
 github_username:  rcbops
+faq_url: http://docs.rackspace.com/rpc/api/v9/rpc-faq-v9/content/rpc-common-front.html
+release_notes_url: http://docs.rackspace.com/rpc/api/v9/bk-rpc-releasenotes/content/rpc-common-front.html
 
 # Build settings
 markdown: kramdown
 
 links:
+  - name: Private Cloud
+    href: http://www.rackspace.com/cloud/private/
   - name: Documentation
     href: http://docs.rackspace.com/rpc/api/v9/bk-rpc-installation/content/rpc-common-front.html
   - name: Download

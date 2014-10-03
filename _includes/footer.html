@@ -2,13 +2,14 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">{{ site.title }}</h2>
+      <!-- <h2 class="footer-heading">{{ site.title }}</h2> -->
 
     <div class="footer-col-wrapper">
       <div class="footer-col  footer-col-1">
         <ul class="contact-list">
           <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          <li><a href="{{ site.faq_url }}">FAQ</a>
+          <a href="{{ site.release_notes_url }}">Release Notes</a></li>
         </ul>
       </div>
 
@@ -46,7 +47,10 @@
       </div>
 
       <div class="footer-col  footer-col-3">
-        <p class="text">{{ site.description }}</p>
+          <ul class="contact-list">
+            <li>Current OpenStack version: {{ site.openstack_version }}</li>
+            <li>Current Private Cloud version: {{ site.release }}</li>
+          </ul>
       </div>
     </div>
 

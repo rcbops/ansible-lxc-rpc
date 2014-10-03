@@ -3,7 +3,7 @@
  */
 .site-header {
     border-bottom: $grey-color-dark;
-    min-height: 78px;
+    min-height: 58px;
 
     // Positioning context for the mobile navigation icon
     position: relative;
@@ -11,7 +11,7 @@
 
 .site-title {
     font-size: 26px;
-    line-height: 72px;
+    line-height: 56px;
     /* letter-spacing: -1px; */
     /* margin-bottom: 0; */
     float: left;
@@ -29,7 +29,7 @@
 
 .site-nav {
     float: right;
-    line-height: 72px;
+    line-height: 56px;
 
     .menu-icon {
         display: none;
@@ -165,7 +165,7 @@
  * Page content
  */
 .page-content {
-    padding: $spacing-unit 0;
+    padding: ($spacing-unit / 2) 0;
 }
 
 .page-heading {
@@ -246,7 +246,7 @@
 .row {
 
     @include media-query($on-palm) {
-        margin-left: 60px;
+        margin-left: 45px;
     }
 
     .col {
@@ -257,15 +257,27 @@
 
     .col-3 {
         max-width: 225px;
-        margin: 0px 5px 45px 0px;
-    }
+        margin: 0px 14px 5px 14px;
 
-    .col-2 {
-        min-width: 250px;
-        margin: 0 40px 0 60px;
+        @include media-query($on-palm-lg) {
+            margin-left: 20px
+        }
 
         @include media-query($on-palm) {
             margin-left: 0px
+        }
+    }
+
+    .col-4 {
+        max-width: 155px;
+        margin: 0 10px 0 20px;
+
+        @include media-query($on-palm-lg) {
+            margin-left: 20px
+        }
+
+        @include media-query($on-palm) {
+            margin: 0px
         }
     }
 }
