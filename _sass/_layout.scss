@@ -255,11 +255,18 @@
         display: inline-block;
     }
 
-    .col.solutions {
-        display: inherit;
-        max-width: 275px;
-        margin-left: auto;
-        margin-right: auto;
+    .col-2 {
+        max-width: 325px;
+        min-width: 325px;
+        margin: 0px 15px 5px 20px;
+
+        @include media-query($on-palm-lg) {
+            margin-left: 20px
+        }
+
+        @include media-query($on-palm) {
+            margin-left: 0px
+        }
     }
 
     .col-3 {
